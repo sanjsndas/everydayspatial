@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · PLINTH & PLEAT</title>
+  <meta name="description" content="Browse all categories on PLINTH & PLEAT — interior design, architecture, materials, lighting, and spatial theory.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · PLINTH & PLEAT">
+  <meta property="og:description" content="Explore our curated categories of interior design, architecture, and material studies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plinthandpleat.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://plinthandpleat.com/categories.html">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2ddd7;
+      --accent: #9b7b5e;
+      --accent-soft: #f3efe9;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius-sm: 2px;
+      --radius-md: 6px;
+      --radius-lg: 12px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.02);
+      --max-width: 1280px;
+      --content-width: 760px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- UTILITY ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .content-narrow {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      line-height: 1.4;
+    }
+
+    .read-time {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .meta {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .meta .separator {
+      width: 3px;
+      height: 3px;
+      background: var(--muted);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(251, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-primary {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo-primary span {
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .main-nav a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-size: 1rem;
+      font-family: var(--sans);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- CATEGORIES PAGE SPECIFIC ---------- */
+    .categories-hero {
+      margin: 2.5rem 0 3rem;
+    }
+
+    .categories-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.8rem;
+    }
+
+    .categories-hero .lead {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      max-width: 680px;
+      margin-bottom: 1.2rem;
+    }
+
+    .categories-meta {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .categories-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* --- Category Grid --- */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.8rem;
+      margin: 2.5rem 0 4rem;
+    }
+
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.8rem 1.8rem;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .category-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .category-card:hover::before {
+      opacity: 1;
+    }
+
+    .category-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1;
+    }
+
+    .category-card h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-card p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+
+    .category-count {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: auto;
+      border-top: 1px solid var(--border);
+      padding-top: 1.2rem;
+    }
+
+    .category-count span {
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+      text-transform: none;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      background: var(--bg);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.8rem;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer-bottom a {
+      color: var(--muted);
+      margin-left: 1.2rem;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+      .main-nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-bottom a {
+        margin: 0 0.6rem;
+      }
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .logo-primary {
+        font-size: 1.3rem;
+      }
+      .search-toggle span {
+        display: none;
+      }
+      .category-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+      .category-card {
+        padding: 1.5rem 1.3rem 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" class="logo-primary">PLINTH<span>&</span>PLEAT</a>
+        <span class="logo-sub">Everyday Spatial Ideas</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+        🔍 <span>Search</span>
+      </button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="categories-hero">
+      <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">Browse</span>
+      <h1>Categories</h1>
+      <p class="lead">Explore our growing library of spatial ideas — from interior design and architecture to material studies and the quiet poetry of everyday spaces.</p>
+      <div class="categories-meta">
+        <span>📂 6 categories</span>
+        <span>📝 48 articles</span>
+        <span>🔄 Updated regularly</span>
+      </div>
+    </section>
+
+    <!-- Category Grid -->
+    <div class="category-grid">
+
+      <!-- Card 1: Interior Design -->
+      <a href="#" class="category-card">
+        <div class="category-icon">🛋️</div>
+        <h3>Interior Design</h3>
+        <p>From spatial composition to the subtle art of layering textures, explore how interiors shape the way we live, feel, and move.</p>
+        <div class="category-count">12 articles <span>· 4 min read avg</span></div>
+      </a>
+
+      <!-- Card 2: Architecture -->
+      <a href="#" class="category-card">
+        <div class="category-icon">🏛️</div>
+        <h3>Architecture</h3>
+        <p>Critical perspectives on buildings, urban form, and the built environment — from brutalist icons to quiet vernacular traditions.</p>
+        <div class="category-count">10 articles <span>· 6 min read avg</span></div>
+      </a>
+
+      <!-- Card 3: Materials -->
+      <a href="#" class="category-card">
+        <div class="category-icon">🪵</div>
+        <h3>Materials</h3>
+        <p>Stone, timber, glass, lime, and steel. Deep dives into the substances that give our spaces tactility, warmth, and permanence.</p>
+        <div class="category-count">8 articles <span>· 5 min read avg</span></div>
+      </a>
+
+      <!-- Card 4: Lighting -->
+      <a href="#" class="category-card">
+        <div class="category-icon">💡</div>
+        <h3>Lighting</h3>
+        <p>The architecture of light — natural and artificial. How illumination changes the character of a room and the rhythm of a day.</p>
+        <div class="category-count">6 articles <span>· 4 min read avg</span></div>
+      </a>
+
+      <!-- Card 5: Space Planning -->
+      <a href="#" class="category-card">
+        <div class="category-icon">📐</div>
+        <h3>Space Planning</h3>
+        <p>Circulation, proportion, and the practical geometry of living. How thoughtful planning transforms tight footprints into generous homes.</p>
+        <div class="category-count">7 articles <span>· 5 min read avg</span></div>
+      </a>
+
+      <!-- Card 6: Theory & Culture -->
+      <a href="#" class="category-card">
+        <div class="category-icon">📖</div>
+        <h3>Theory & Culture</h3>
+        <p>Essays on the poetics of space, domestic rituals, and the cultural forces that shape how we design and inhabit our environments.</p>
+        <div class="category-count">5 articles <span>· 7 min read avg</span></div>
+      </a>
+
+    </div>
+
+    <!-- Optional subtle footnote -->
+    <div style="max-width: var(--content-width); margin: 0 auto 3.5rem; text-align: center; font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 2rem;">
+      <p>New categories are added as our editorial library grows. Have a topic in mind? <a href="contact.html" style="text-decoration: underline; text-underline-offset: 3px;">Suggest a category</a>.</p>
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-primary" style="font-size: 1.4rem;">PLINTH<span>&</span>PLEAT</a>
+          <p>Interior design and architecture journal. Independent, reader-supported, and ad-free since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>More</h5>
+          <ul>
+            <li><a href="#">Home Design</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Info</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PLINTH & PLEAT. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- Search Toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // --- Smooth scroll for internal links ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // --- Demo form prevention (just in case) ---
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const input = this.querySelector('input[type="email"]');
+          if (input && input.value.trim()) {
+            alert('Thank you for subscribing. (Demo — no data sent.)');
+            input.value = '';
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Schema Markup for Categories Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categories · PLINTH & PLEAT",
+    "description": "Browse all categories on PLINTH & PLEAT — interior design, architecture, materials, lighting, and spatial theory.",
+    "url": "https://plinthandpleat.com/categories.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "PLINTH & PLEAT",
+      "url": "https://plinthandpleat.com"
+    },
+    "dateModified": "2025-01-15",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PLINTH & PLEAT",
+      "email": "editor@plinthandpleat.com"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Interior Design" },
+        { "@type": "ListItem", "position": 2, "name": "Architecture" },
+        { "@type": "ListItem", "position": 3, "name": "Materials" },
+        { "@type": "ListItem", "position": 4, "name": "Lighting" },
+        { "@type": "ListItem", "position": 5, "name": "Space Planning" },
+        { "@type": "ListItem", "position": 6, "name": "Theory & Culture" }
+      ]
+    }
+  }
+  </script>
+</body>
+</html>

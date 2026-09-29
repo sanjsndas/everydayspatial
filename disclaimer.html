@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disclaimer — PLINTH & PLEAT</title>
+  <meta name="description" content="Disclaimer for PLINTH & PLEAT. Learn about the limitations of liability and the nature of information provided on our website.">
+  <meta property="og:title" content="Disclaimer — PLINTH & PLEAT">
+  <meta property="og:description" content="Limitations of liability and professional disclaimer for PLINTH & PLEAT.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plinthandpleat.com/disclaimer">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://plinthandpleat.com/disclaimer">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2ddd7;
+      --accent: #9b7b5e;
+      --accent-soft: #f3efe9;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius-sm: 2px;
+      --radius-md: 6px;
+      --radius-lg: 12px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.02);
+      --max-width: 1280px;
+      --content-width: 760px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    ul, ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ---------- UTILITY ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      line-height: 1.4;
+    }
+
+    .section-title {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(251, 249, 247, 0.92);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-primary {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo-primary span {
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .main-nav a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-size: 1rem;
+      font-family: var(--sans);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- DISCLAIMER PAGE ---------- */
+    .disclaimer-hero {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.8rem;
+    }
+
+    .disclaimer-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .disclaimer-hero .subhead {
+      font-size: 1.1rem;
+      color: var(--ink-soft);
+      max-width: 620px;
+      margin-bottom: 0;
+    }
+
+    .disclaimer-hero .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1.2rem;
+      font-style: italic;
+    }
+
+    .disclaimer-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .disclaimer-content {
+      max-width: var(--content-width);
+    }
+
+    .disclaimer-content h2 {
+      font-size: 1.6rem;
+      margin-top: 2.8rem;
+      margin-bottom: 0.8rem;
+      scroll-margin-top: 100px;
+    }
+
+    .disclaimer-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .disclaimer-content h3 {
+      font-size: 1.15rem;
+      margin-top: 1.6rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .disclaimer-content p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+
+    .disclaimer-content ul, .disclaimer-content ol {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .disclaimer-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .disclaimer-content strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .disclaimer-content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .disclaimer-content a:hover {
+      color: var(--ink);
+    }
+
+    /* Callout / notice box */
+    .notice-box {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 1.5rem 1.8rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 2rem 0;
+    }
+
+    .notice-box p {
+      margin-bottom: 0.5rem;
+      font-size: 0.92rem;
+    }
+
+    .notice-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .notice-box strong {
+      color: var(--ink);
+    }
+
+    /* Sidebar TOC */
+    .disclaimer-sidebar {
+      position: sticky;
+      top: 100px;
+      align-self: start;
+    }
+
+    .toc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+    }
+
+    .toc-card h3 {
+      font-size: 0.9rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .toc-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.88rem;
+    }
+
+    .toc-card li {
+      margin-bottom: 0.5rem;
+    }
+
+    .toc-card a {
+      color: var(--ink-soft);
+      border-left: 2px solid transparent;
+      padding-left: 0.7rem;
+      display: block;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .toc-card a:hover {
+      color: var(--ink);
+      border-left-color: var(--accent);
+    }
+
+    .toc-card .badge {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+      background: var(--accent-soft);
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter {
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.8rem;
+      margin-bottom: 3.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .newsletter h2 {
+      color: var(--bg);
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .newsletter p {
+      color: #c5beb6;
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .newsletter form {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter input {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.8rem 1rem;
+      border: 1px solid #3f3f3f;
+      background: #2a2a2a;
+      border-radius: 30px;
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .newsletter input::placeholder {
+      color: #8a8a8a;
+    }
+
+    .newsletter button {
+      padding: 0.8rem 1.6rem;
+      background: var(--accent);
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .newsletter button:hover {
+      background: #b08d6b;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      background: var(--bg);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.8rem;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer-bottom a {
+      color: var(--muted);
+      margin-left: 1.2rem;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .disclaimer-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .disclaimer-sidebar {
+        position: static;
+        order: -1;
+      }
+
+      .toc-card ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+      }
+
+      .toc-card li {
+        margin-bottom: 0;
+      }
+
+      .toc-card a {
+        border-left: none;
+        padding-left: 0;
+        border-bottom: 1px solid transparent;
+      }
+
+      .toc-card a:hover {
+        border-left: none;
+        border-bottom-color: var(--accent);
+      }
+
+      .newsletter {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .main-nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-bottom a {
+        margin: 0 0.6rem;
+      }
+
+      .disclaimer-hero {
+        padding: 2rem 0 1.5rem;
+      }
+
+      .disclaimer-content h2 {
+        font-size: 1.4rem;
+      }
+
+      .notice-box {
+        padding: 1.2rem 1.3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .logo-primary {
+        font-size: 1.3rem;
+      }
+
+      .search-toggle span {
+        display: none;
+      }
+
+      .newsletter button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" class="logo-primary">PLINTH<span>&</span>PLEAT</a>
+        <span class="logo-sub">Everyday Spatial Ideas</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html" class="active">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+        🔍 <span>Search</span>
+      </button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- Disclaimer Hero -->
+    <section class="disclaimer-hero">
+      <h1>Disclaimer</h1>
+      <p class="subhead">The information on this website is provided for general informational and educational purposes only. Please read this disclaimer carefully before using our site.</p>
+      <p class="meta">Last updated: 1 March 2025</p>
+    </section>
+
+    <!-- Disclaimer Layout: Content + Sidebar -->
+    <div class="disclaimer-layout">
+
+      <!-- Content -->
+      <article class="disclaimer-content">
+
+        <h2 id="general-information">1. General information</h2>
+        <p>The content on <strong>PLINTH &amp; PLEAT</strong> (“we”, “us”, or “our”) at <a href="https://plinthandpleat.com">plinthandpleat.com</a> is provided for general informational and educational purposes only. All information on the site is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.</p>
+        <p>Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.</p>
+
+        <div class="notice-box">
+          <p><strong>Important:</strong> The content on this website does not constitute professional advice. Always seek the guidance of a qualified professional before making decisions based on information found here.</p>
+        </div>
+
+        <h2 id="professional-disclaimer">2. Professional disclaimer</h2>
+        <p>The site cannot and does not contain professional interior design, architectural, engineering, or legal advice. The design, architecture, and spatial information provided is for general informational and educational purposes only and is not a substitute for professional advice.</p>
+        <p>Accordingly, before taking any actions based upon such information, we encourage you to consult with the appropriate professionals. We do not provide any kind of professional advice. The use or reliance of any information contained on this site is solely at your own risk.</p>
+
+        <h2 id="external-links">3. External links disclaimer</h2>
+        <p>The site may contain (or you may be sent through the site) links to other websites or content belonging to or originating from third parties, or links to websites and features in banners or other advertising. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, availability, or completeness by us.</p>
+        <p>We do not warrant, endorse, guarantee, or assume responsibility for the accuracy or reliability of any information offered by third-party websites linked through the site, or any website or feature linked in any banner or other advertising. We will not be a party to or in any way be responsible for monitoring any transaction between you and third-party providers of products or services.</p>
+
+        <h2 id="affiliates">4. Affiliates disclaimer</h2>
+        <p>The site may contain links to affiliate websites, and we may receive an affiliate commission for any purchases made by you on the affiliate website using such links. Our affiliates include, but are not limited to, furniture retailers, design marketplaces, and book publishers.</p>
+        <p>We only recommend products and services that we genuinely believe will add value to our readers. However, we encourage you to perform your own research before making any purchase.</p>
+
+        <h2 id="testimonials">5. Testimonials disclaimer</h2>
+        <p>The site may contain testimonials by users of our products and/or services. These testimonials reflect the real-life experiences and opinions of such users. However, the experiences are personal to those particular users and may not necessarily be representative of all users of our products and/or services.</p>
+        <p>We do not claim, and you should not assume, that all users will have the same experiences. Your individual results may vary. The testimonials on the site are submitted in various forms such as text, audio, and/or video, and are reviewed by us before being posted. They appear on the site verbatim as given by the users, except for the correction of grammar or typing errors.</p>
+
+        <h2 id="views-expressed">6. Views expressed disclaimer</h2>
+        <p>The views and opinions expressed on this site are those of the authors and do not necessarily reflect the official policy or position of PLINTH &amp; PLEAT. Any content provided by our guest authors or contributors is their opinion and is not intended to malign any religion, ethnic group, club, organization, company, individual, or anyone or anything.</p>
+
+        <h2 id="errors-omissions">7. Errors and omissions</h2>
+        <p>While we have made every attempt to ensure that the information contained in this site has been obtained from reliable sources, PLINTH &amp; PLEAT is not responsible for any errors or omissions, or for the results obtained from the use of this information. All information in this site is provided “as is”, with no guarantee of completeness, accuracy, timeliness, or of the results obtained from the use of this information, and without warranty of any kind, express or implied.</p>
+
+        <h2 id="fair-use">8. Fair use notice</h2>
+        <p>This site may contain copyrighted material the use of which has not always been specifically authorized by the copyright owner. We make such material available in an effort to advance the understanding of interior design, architecture, and related subjects. We believe this constitutes a “fair use” of any such copyrighted material as provided for in section 107 of the US Copyright Law.</p>
+        <p>If you wish to use copyrighted material from this site for purposes of your own that go beyond “fair use”, you must obtain permission from the copyright owner.</p>
+
+        <h2 id="consent">9. Consent</h2>
+        <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+
+        <h2 id="updates">10. Updates</h2>
+        <p>Should we update, amend, or make any changes to this document, those changes will be prominently posted here. This disclaimer was last updated on <strong>1 March 2025</strong>.</p>
+
+        <h2 id="contact">11. Contact us</h2>
+        <p>If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at <a href="mailto:legal@plinthandpleat.com">legal@plinthandpleat.com</a>.</p>
+        <p>
+          <strong>PLINTH &amp; PLEAT — Legal Team</strong><br>
+          14 Courtyard Lane<br>
+          London, EC1 4AB<br>
+          United Kingdom<br>
+        </p>
+
+      </article>
+
+      <!-- Sidebar TOC -->
+      <aside class="disclaimer-sidebar" aria-label="Table of contents">
+        <div class="toc-card">
+          <h3>On this page</h3>
+          <ul>
+            <li><a href="#general-information">1. General information</a></li>
+            <li><a href="#professional-disclaimer">2. Professional disclaimer</a></li>
+            <li><a href="#external-links">3. External links disclaimer</a></li>
+            <li><a href="#affiliates">4. Affiliates disclaimer</a></li>
+            <li><a href="#testimonials">5. Testimonials disclaimer</a></li>
+            <li><a href="#views-expressed">6. Views expressed disclaimer</a></li>
+            <li><a href="#errors-omissions">7. Errors and omissions</a></li>
+            <li><a href="#fair-use">8. Fair use notice</a></li>
+            <li><a href="#consent">9. Consent</a></li>
+            <li><a href="#updates">10. Updates</a></li>
+            <li><a href="#contact">11. Contact us</a></li>
+          </ul>
+          <span class="badge">📄 Effective: 1 March 2025</span>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Newsletter Banner -->
+    <section class="newsletter" aria-label="Newsletter signup">
+      <div>
+        <h2>Stay curious.</h2>
+        <p>Join 12,000+ readers who receive our weekly long-form essay on interior design, architecture, and the art of living well.</p>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-primary" style="font-size: 1.4rem;">PLINTH<span>&</span>PLEAT</a>
+          <p>Interior design and architecture journal. Independent, reader-supported, and ad-free since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>More</h5>
+          <ul>
+            <li><a href="#">Home Design</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Info</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PLINTH & PLEAT. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- Search Toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // --- Newsletter Form (demo) ---
+      const newsletterForm = document.getElementById('newsletterForm');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const input = this.querySelector('input[type="email"]');
+          if (input && input.value.trim()) {
+            alert('Thank you for subscribing. (Demo — no data sent.)');
+            input.value = '';
+          }
+        });
+      }
+
+      // --- Smooth TOC active link highlight on scroll ---
+      const tocLinks = document.querySelectorAll('.toc-card a');
+      const sections = document.querySelectorAll('.disclaimer-content h2[id]');
+
+      function highlightToc() {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 120) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        tocLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.style.color = 'var(--ink)';
+            link.style.borderLeftColor = 'var(--accent)';
+          } else {
+            link.style.color = '';
+            link.style.borderLeftColor = '';
+          }
+        });
+      }
+
+      window.addEventListener('scroll', highlightToc);
+      highlightToc();
+    })();
+  </script>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disclaimer — PLINTH & PLEAT",
+    "description": "Disclaimer for PLINTH & PLEAT. Learn about the limitations of liability and the nature of information provided on our website.",
+    "url": "https://plinthandpleat.com/disclaimer",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PLINTH & PLEAT",
+      "email": "legal@plinthandpleat.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "14 Courtyard Lane",
+        "addressLocality": "London",
+        "postalCode": "EC1 4AB",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>

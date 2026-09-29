@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Privacy · PLINTH & PLEAT</title>
+  <meta name="description" content="Terms of Privacy for PLINTH & PLEAT — an independent editorial on interior design, architecture, and spatial theory.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terms of Privacy · PLINTH & PLEAT">
+  <meta property="og:description" content="Terms of Privacy for PLINTH & PLEAT — independent editorial on interior design and architecture.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plinthandpleat.com/terms.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://plinthandpleat.com/terms.html">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2ddd7;
+      --accent: #9b7b5e;
+      --accent-soft: #f3efe9;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius-sm: 2px;
+      --radius-md: 6px;
+      --radius-lg: 12px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.02);
+      --max-width: 1280px;
+      --content-width: 760px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .article-body p {
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    /* ---------- UTILITY ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .content-narrow {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      line-height: 1.4;
+    }
+
+    .read-time {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .meta {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .meta .separator {
+      width: 3px;
+      height: 3px;
+      background: var(--muted);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(251, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-primary {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo-primary span {
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .main-nav a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-size: 1rem;
+      font-family: var(--sans);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- TERMS PAGE SPECIFIC ---------- */
+    .terms-hero {
+      margin: 2.5rem 0 3rem;
+    }
+
+    .terms-hero h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.8rem;
+    }
+
+    .terms-hero .lead {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      max-width: 680px;
+      margin-bottom: 1.2rem;
+    }
+
+    .terms-body {
+      max-width: var(--content-width);
+      margin: 0 auto 3.5rem;
+    }
+
+    .terms-body h2 {
+      font-size: 1.6rem;
+      margin-top: 2.8rem;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .terms-body h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .terms-body h3 {
+      font-size: 1.2rem;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .terms-body p {
+      font-size: 1.02rem;
+      line-height: 1.8;
+    }
+
+    .terms-body ul, .terms-body ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    .terms-body li {
+      margin-bottom: 0.5rem;
+      font-size: 1.02rem;
+      line-height: 1.7;
+    }
+
+    .terms-body strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .terms-meta {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .terms-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      background: var(--bg);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.8rem;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer-bottom a {
+      color: var(--muted);
+      margin-left: 1.2rem;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+      .main-nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-bottom a {
+        margin: 0 0.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .logo-primary {
+        font-size: 1.3rem;
+      }
+      .search-toggle span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" class="logo-primary">PLINTH<span>&</span>PLEAT</a>
+        <span class="logo-sub">Everyday Spatial Ideas</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+        🔍 <span>Search</span>
+      </button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- Hero -->
+    <section class="terms-hero">
+      <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">Legal</span>
+      <h1>Terms of Privacy</h1>
+      <p class="lead">Please read these terms carefully before using PLINTH & PLEAT. By accessing or using our website, you agree to be bound by these terms.</p>
+      <div class="terms-meta">
+        <span>📅 Last updated: January 15, 2025</span>
+        <span>⚖️ Effective: January 15, 2025</span>
+      </div>
+    </section>
+
+    <!-- Terms Body -->
+    <div class="terms-body article-body">
+
+      <h2>1. Agreement to Terms</h2>
+      <p>These Terms of Privacy ("Terms") constitute a legally binding agreement between you ("user," "you," or "your") and PLINTH & PLEAT ("we," "us," "our," or "the Site"), governing your access to and use of the website located at <strong>plinthandpleat.com</strong> (the "Site"), including any content, functionality, and services offered on or through the Site.</p>
+      <p>By accessing, browsing, or using the Site, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not access or use the Site.</p>
+
+      <h2>2. About PLINTH & PLEAT</h2>
+      <p>PLINTH & PLEAT is an independent editorial journal covering interior design, architecture, spatial theory, materials, and the poetics of everyday living. We publish long-form essays, practical guides, and critical reflections. The Site is operated independently and is reader-supported.</p>
+
+      <h2>3. Privacy & Data Collection</h2>
+      <p>We are committed to protecting your privacy. This section explains what information we collect, how we use it, and your rights regarding your personal data.</p>
+
+      <h3>3.1 Information We Collect</h3>
+      <ul>
+        <li><strong>Voluntary information:</strong> When you subscribe to our newsletter, contact us via email, or submit a pitch, you may provide your name, email address, and any other information you choose to share.</li>
+        <li><strong>Automatically collected information:</strong> Like most websites, we may collect non-personal information such as browser type, operating system, referring URLs, pages visited, and time spent on the Site. This data is used in aggregate to improve our content and user experience.</li>
+        <li><strong>Cookies:</strong> We use minimal, essential cookies to ensure the Site functions properly. For more details, please see our <a href="cookies.html">Cookies Policy</a>.</li>
+      </ul>
+
+      <h3>3.2 How We Use Your Information</h3>
+      <ul>
+        <li>To send our weekly newsletter (only if you have explicitly subscribed).</li>
+        <li>To respond to your inquiries, pitches, or partnership requests.</li>
+        <li>To analyze site traffic and improve our editorial content.</li>
+        <li>To comply with legal obligations, if applicable.</li>
+      </ul>
+
+      <h3>3.3 Data Sharing & Disclosure</h3>
+      <p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties. We may share aggregated, non-personal data with analytics providers (such as privacy-respecting analytics platforms) solely for the purpose of understanding readership trends.</p>
+      <p>We may disclose your information if required by law, regulation, or legal process, or to protect the rights, property, or safety of PLINTH & PLEAT, our contributors, or the public.</p>
+
+      <h3>3.4 Data Retention</h3>
+      <p>We retain personal information (such as email addresses for newsletter subscriptions) only for as long as necessary to fulfill the purposes outlined in these Terms. You may request deletion of your data at any time by contacting us at <a href="mailto:privacy@plinthandpleat.com">privacy@plinthandpleat.com</a>.</p>
+
+      <h3>3.5 Your Rights</h3>
+      <p>Depending on your jurisdiction, you may have the right to:</p>
+      <ul>
+        <li>Access the personal information we hold about you.</li>
+        <li>Request correction of inaccurate data.</li>
+        <li>Request deletion of your data.</li>
+        <li>Opt out of marketing communications at any time.</li>
+        <li>Lodge a complaint with a supervisory authority.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@plinthandpleat.com">privacy@plinthandpleat.com</a>.</p>
+
+      <h2>4. Intellectual Property</h2>
+      <p>All content on PLINTH & PLEAT — including but not limited to text, articles, essays, graphics, logos, images, and the selection and arrangement thereof — is the property of PLINTH & PLEAT or its content contributors and is protected by international copyright, trademark, and other intellectual property laws.</p>
+      <p>You may:</p>
+      <ul>
+        <li>Read, share, and link to our articles for personal, non-commercial purposes.</li>
+        <li>Quote short excerpts with clear attribution and a link back to the original article.</li>
+      </ul>
+      <p>You may <strong>not</strong>:</p>
+      <ul>
+        <li>Reproduce, republish, or redistribute substantial portions of our content without prior written permission.</li>
+        <li>Use our content for commercial purposes without explicit authorization.</li>
+        <li>Alter, modify, or create derivative works from our content without permission.</li>
+        <li>Use our name, logo, or branding in any way that implies endorsement or affiliation without our consent.</li>
+      </ul>
+      <p>For permissions and licensing inquiries, please contact <a href="mailto:editor@plinthandpleat.com">editor@plinthandpleat.com</a>.</p>
+
+      <h2>5. User Conduct</h2>
+      <p>By using the Site, you agree not to:</p>
+      <ul>
+        <li>Violate any applicable law or regulation.</li>
+        <li>Infringe upon the rights of others, including intellectual property rights.</li>
+        <li>Transmit any harmful, offensive, or disruptive content.</li>
+        <li>Attempt to gain unauthorized access to the Site, its servers, or any connected systems.</li>
+        <li>Use automated systems (such as bots or scrapers) to access or collect content from the Site without permission.</li>
+        <li>Interfere with the proper functioning of the Site.</li>
+      </ul>
+
+      <h2>6. Third-Party Links</h2>
+      <p>The Site may contain links to third-party websites or resources. These links are provided for your convenience and do not imply endorsement. We have no control over the content, privacy policies, or practices of third-party sites and accept no responsibility for them. You access third-party sites at your own risk.</p>
+
+      <h2>7. Disclaimer of Warranties</h2>
+      <p>The content on PLINTH & PLEAT is provided for general informational and educational purposes only. While we strive for accuracy and depth, we make no warranties or representations of any kind, express or implied, regarding:</p>
+      <ul>
+        <li>The completeness, accuracy, reliability, or suitability of the content.</li>
+        <li>The availability or uninterrupted operation of the Site.</li>
+        <li>The absence of errors, viruses, or other harmful components.</li>
+      </ul>
+      <p>Any reliance you place on the content is strictly at your own risk. For professional architectural, design, legal, or financial advice, please consult a qualified professional.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, PLINTH & PLEAT, its editors, contributors, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Site or reliance on its content. This includes, but is not limited to, loss of data, revenue, or profits.</p>
+
+      <h2>9. Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless PLINTH & PLEAT, its editors, contributors, and affiliates from and against any claims, liabilities, damages, losses, or expenses (including reasonable legal fees) arising out of or in any way connected with your violation of these Terms or your use of the Site.</p>
+
+      <h2>10. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time to reflect changes in our practices, legal requirements, or editorial operations. When we make material changes, we will update the "Last updated" date at the top of this page. Your continued use of the Site after any changes constitutes your acceptance of the revised Terms.</p>
+      <p>We encourage you to review this page periodically to stay informed about our terms and practices.</p>
+
+      <h2>11. Termination</h2>
+      <p>We reserve the right to restrict, suspend, or terminate your access to the Site, without notice or liability, if we believe you have violated these Terms or engaged in conduct harmful to the Site, its contributors, or other users.</p>
+
+      <h2>12. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which PLINTH & PLEAT operates, without regard to conflict of law principles. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts in that jurisdiction.</p>
+
+      <h2>13. Severability</h2>
+      <p>If any provision of these Terms is found to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.</p>
+
+      <h2>14. Contact Us</h2>
+      <p>If you have any questions, concerns, or requests regarding these Terms of Privacy, please contact us:</p>
+      <p>
+        <strong>PLINTH & PLEAT</strong><br>
+        Email: <a href="mailto:legal@plinthandpleat.com">legal@plinthandpleat.com</a><br>
+        Editorial: <a href="mailto:editor@plinthandpleat.com">editor@plinthandpleat.com</a><br>
+        Privacy: <a href="mailto:privacy@plinthandpleat.com">privacy@plinthandpleat.com</a>
+      </p>
+
+      <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--muted);">
+        <p>By using PLINTH & PLEAT, you acknowledge that you have read, understood, and agree to these Terms of Privacy.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-primary" style="font-size: 1.4rem;">PLINTH<span>&</span>PLEAT</a>
+          <p>Interior design and architecture journal. Independent, reader-supported, and ad-free since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>More</h5>
+          <ul>
+            <li><a href="#">Home Design</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Info</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PLINTH & PLEAT. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- Search Toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // --- Smooth scroll for internal links (if any) ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // --- Newsletter form (prevent actual submission) ---
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const input = this.querySelector('input[type="email"]');
+          if (input && input.value.trim()) {
+            alert('Thank you for subscribing. (Demo — no data sent.)');
+            input.value = '';
+          }
+        });
+      });
+    })();
+  </script>
+
+  <!-- Schema Markup for WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Terms of Privacy · PLINTH & PLEAT",
+    "description": "Terms of Privacy for PLINTH & PLEAT — independent editorial on interior design, architecture, and spatial theory.",
+    "url": "https://plinthandpleat.com/terms.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "PLINTH & PLEAT",
+      "url": "https://plinthandpleat.com"
+    },
+    "dateModified": "2025-01-15",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PLINTH & PLEAT",
+      "email": "legal@plinthandpleat.com"
+    }
+  }
+  </script>
+</body>
+</html>

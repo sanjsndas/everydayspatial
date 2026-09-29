@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · PLINTH & PLEAT — Interior Design & Architecture Journal</title>
+  <meta name="description" content="About PLINTH & PLEAT — an independent editorial on interior design, architecture, spatial theory, materials, and the poetics of everyday living.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About · PLINTH & PLEAT — Interior Design & Architecture Journal">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, and the poetics of everyday living.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plinthandpleat.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://plinthandpleat.com/about.html">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2ddd7;
+      --accent: #9b7b5e;
+      --accent-soft: #f3efe9;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius-sm: 2px;
+      --radius-md: 6px;
+      --radius-lg: 12px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.02);
+      --max-width: 1280px;
+      --content-width: 760px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    .article-body p {
+      font-size: 1.08rem;
+      line-height: 1.8;
+    }
+
+    /* ---------- UTILITY ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .content-narrow {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      line-height: 1.4;
+    }
+
+    .read-time {
+      font-size: 0.75rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .meta {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .meta .separator {
+      width: 3px;
+      height: 3px;
+      background: var(--muted);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: rgba(251, 249, 247, 0.92);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-primary {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo-primary span {
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .main-nav a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-size: 1rem;
+      font-family: var(--sans);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin: 2.5rem 0 3.5rem;
+      align-items: center;
+    }
+
+    .about-hero-text h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.8rem;
+    }
+
+    .about-hero-text .lead {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--ink-soft);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-hero-image img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow);
+    }
+
+    .about-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .about-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem 2rem 1.8rem;
+    }
+
+    .about-card h3 {
+      margin-bottom: 1rem;
+    }
+
+    .about-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .team-member {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .team-member h4 {
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .team-member .role {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .team-member p {
+      font-size: 0.85rem;
+      margin-bottom: 0;
+    }
+
+    .values-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .values-list li {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+    }
+
+    .values-list .num {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1.2;
+      min-width: 28px;
+    }
+
+    .values-list .value-text strong {
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 0.15rem;
+      color: var(--ink);
+    }
+
+    .values-list .value-text span {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0 0.5rem;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item .stat-number {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1;
+      display: block;
+    }
+
+    .stat-item .stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 0.3rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      background: var(--bg);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.8rem;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer-bottom a {
+      color: var(--muted);
+      margin-left: 1.2rem;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .about-hero {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .about-hero-image img {
+        height: 280px;
+      }
+      .about-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+      .main-nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-bottom a {
+        margin: 0 0.6rem;
+      }
+      .about-card {
+        padding: 1.5rem 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .logo-primary {
+        font-size: 1.3rem;
+      }
+      .search-toggle span {
+        display: none;
+      }
+      .stat-row {
+        gap: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" class="logo-primary">PLINTH<span>&</span>PLEAT</a>
+        <span class="logo-sub">Everyday Spatial Ideas</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+        🔍 <span>Search</span>
+      </button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- About Hero -->
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">About</span>
+        <h1>Spaces matter.<br>We write about why.</h1>
+        <p class="lead">PLINTH & PLEAT is an independent journal on interior design, architecture, and the quiet intelligence of everyday spaces. We publish long-form essays, practical guides, and critical reflections — no trend-chasing, no noise.</p>
+        <div class="meta" style="gap: 1rem;">
+          <span>Est. 2019</span>
+          <span class="separator"></span>
+          <span>Independent & reader-supported</span>
+          <span class="separator"></span>
+          <span>Ad-free</span>
+        </div>
+      </div>
+      <div class="about-hero-image">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop" alt="Sunlit living room with a neutral palette and floor-to-ceiling windows">
+      </div>
+    </section>
+
+    <!-- Mission / Editorial statement -->
+    <section class="about-section">
+      <div class="about-grid-2">
+        <div class="about-card">
+          <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">Our Mission</span>
+          <h3>To make spatial thinking accessible — and beautiful.</h3>
+          <p>We believe that good design is not a luxury, but a language. A well-proportioned room, a thoughtfully placed window, a material that ages with grace — these are not trivial details. They shape how we feel, how we move, and how we live.</p>
+          <p>Our mission is to bridge the gap between professional practice and everyday curiosity. We translate architectural ideas into clear, useful prose — without dumbing them down, and without mystifying them.</p>
+          <p>Every article is written by practising architects, designers, and researchers who care deeply about the built environment. We take the long view: we are more interested in what lasts than what is trending.</p>
+        </div>
+        <div class="about-card">
+          <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">Editorial Principles</span>
+          <h3>What we stand for.</h3>
+          <ul class="values-list">
+            <li>
+              <span class="num">01</span>
+              <div class="value-text">
+                <strong>Depth over speed</strong>
+                <span>We publish fewer articles, but each one is researched, considered, and built to last.</span>
+              </div>
+            </li>
+            <li>
+              <span class="num">02</span>
+              <div class="value-text">
+                <strong>Practical poetry</strong>
+                <span>We write about ideas — but always with an eye to how they translate into real rooms and real lives.</span>
+              </div>
+            </li>
+            <li>
+              <span class="num">03</span>
+              <div class="value-text">
+                <strong>Independence</strong>
+                <span>We are reader-supported. We do not accept sponsored content, and we do not chase clicks.</span>
+              </div>
+            </li>
+            <li>
+              <span class="num">04</span>
+              <div class="value-text">
+                <strong>Sustainability as standard</strong>
+                <span>We believe the most sustainable building is the one that already exists — and the next best is built to last.</span>
+              </div>
+            </li>
+            <li>
+              <span class="num">05</span>
+              <div class="value-text">
+                <strong>Human scale</strong>
+                <span>Architecture is for people. We never lose sight of the body, the senses, and the rituals of daily life.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team / Contributors -->
+    <section class="about-section">
+      <div class="section-title">The people behind the pages</div>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop&crop=face" alt="Portrait of Elena Marsh">
+          <h4>Elena Marsh</h4>
+          <div class="role">Editor-in-Chief</div>
+          <p>Architect and writer. Formerly at Studio Mumbai and OMA. Elena founded PLINTH & PLEAT to create a space for rigorous, generous writing about the built environment.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Portrait of Marcus Chen">
+          <h4>Marcus Chen</h4>
+          <div class="role">Senior Editor, Architecture</div>
+          <p>Practising architect and educator. Marcus writes on facades, material culture, and the intersection of climate and design. He teaches at the Architectural Association.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=face" alt="Portrait of Sofia Lindqvist">
+          <h4>Sofia Lindqvist</h4>
+          <div class="role">Editor, Interiors & Home</div>
+          <p>Interior designer and stylist based in Stockholm. Sofia covers small-space living, lighting, and the art of making a home feel lived-in from day one.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face" alt="Portrait of James Okonkwo">
+          <h4>James Okonkwo</h4>
+          <div class="role">Contributing Editor, Materials</div>
+          <p>Materials scientist and writer. James explores the chemistry and craft of building materials — from lime plaster to rammed earth — with clarity and wit.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats / Reach -->
+    <section class="about-section">
+      <div class="about-card" style="text-align: center; padding: 2.5rem 2rem;">
+        <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">By the numbers</span>
+        <h3 style="margin-bottom: 1rem;">A quiet corner of the internet — with a growing readership.</h3>
+        <div class="stat-row" style="justify-content: center;">
+          <div class="stat-item">
+            <span class="stat-number">12k+</span>
+            <span class="stat-label">Newsletter readers</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">240+</span>
+            <span class="stat-label">Long-form articles</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">50</span>
+            <span class="stat-label">Countries reached</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Years publishing</span>
+          </div>
+        </div>
+        <p style="margin-top: 1.8rem; max-width: 540px; margin-left: auto; margin-right: auto;">We are proud to be entirely independent. No sponsored posts, no banner ads, no paywalls. Just carefully considered writing, delivered weekly.</p>
+      </div>
+    </section>
+
+    <!-- How we work / contact -->
+    <section class="about-section">
+      <div class="about-grid-2">
+        <div class="about-card">
+          <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">How we work</span>
+          <h3>Slow journalism for the built environment.</h3>
+          <p>Each article begins with a question — not a keyword. We research deeply, speak to practitioners, and test ideas against real projects. We do not publish listicles or surface-level trend reports.</p>
+          <p>We work with a small group of contributing architects, designers, and historians. Every piece is edited collaboratively, and we fact-check carefully. When we get something wrong, we correct it transparently.</p>
+          <p>Our editorial calendar is driven by curiosity, not by commercial pressures. We publish when a piece is ready — not to fill a schedule.</p>
+        </div>
+        <div class="about-card">
+          <span class="tag" style="margin-bottom: 0.8rem; display: inline-block;">Get in touch</span>
+          <h3>We’d love to hear from you.</h3>
+          <p><strong>Editorial & pitches:</strong><br><a href="mailto:editor@plinthandpleat.com">editor@plinthandpleat.com</a></p>
+          <p><strong>Partnerships & advertising:</strong><br><a href="mailto:partners@plinthandpleat.com">partners@plinthandpleat.com</a></p>
+          <p><strong>General enquiries:</strong><br><a href="mailto:hello@plinthandpleat.com">hello@plinthandpleat.com</a></p>
+          <p style="margin-top: 1.2rem; font-size: 0.9rem;">We read every email, but we cannot always respond individually. If you are pitching an article, please include a short outline and a link to previous work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action / newsletter -->
+    <section class="newsletter" style="margin-bottom: 3rem;">
+      <div>
+        <h2>Stay curious.</h2>
+        <p>Join 12,000+ readers who receive our weekly long-form essay on interior design, architecture, and the art of living well.</p>
+      </div>
+      <form>
+        <input type="email" placeholder="Email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-primary" style="font-size: 1.4rem;">PLINTH<span>&</span>PLEAT</a>
+          <p>Interior design and architecture journal. Independent, reader-supported, and ad-free since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>More</h5>
+          <ul>
+            <li><a href="#">Home Design</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Info</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PLINTH & PLEAT. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- Search Toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // --- Newsletter form (prevent actual submission) ---
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const input = this.querySelector('input[type="email"]');
+          if (input && input.value.trim()) {
+            alert('Thank you for subscribing. (Demo — no data sent.)');
+            input.value = '';
+          }
+        });
+      });
+
+      // --- Optional: search filtering on about page (only static text, no cards) ---
+      // Kept minimal — about page has no article grid to filter.
+    })();
+  </script>
+
+  <!-- Schema Markup for AboutPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About PLINTH & PLEAT",
+    "description": "Independent editorial on interior design, architecture, and the poetics of everyday living.",
+    "url": "https://plinthandpleat.com/about.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "PLINTH & PLEAT",
+      "foundingDate": "2019",
+      "description": "An independent journal covering interior design, architecture, and spatial theory.",
+      "email": "editor@plinthandpleat.com"
+    }
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PLINTH & PLEAT</title>
+  <meta name="description" content="Privacy policy for PLINTH & PLEAT. How we collect, use, and protect your personal information.">
+  <meta property="og:title" content="Privacy Policy — PLINTH & PLEAT">
+  <meta property="og:description" content="Learn how PLINTH & PLEAT handles your personal data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plinthandpleat.com/privacy">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://plinthandpleat.com/privacy">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #fbf9f7;
+      --surface: #ffffff;
+      --ink: #1e1e1e;
+      --ink-soft: #3d3d3d;
+      --muted: #6b6b6b;
+      --border: #e2ddd7;
+      --accent: #9b7b5e;
+      --accent-soft: #f3efe9;
+      --serif: 'Georgia', 'Times New Roman', 'Times', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --radius-sm: 2px;
+      --radius-md: 6px;
+      --radius-lg: 12px;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 4px rgba(0, 0, 0, 0.02);
+      --max-width: 1280px;
+      --content-width: 760px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      color: var(--ink);
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      margin-bottom: 0.25rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--ink-soft);
+    }
+
+    ul, ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      color: var(--ink-soft);
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* ---------- UTILITY ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .flex-between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      line-height: 1.4;
+    }
+
+    .section-title {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.6rem;
+      margin-bottom: 1.8rem;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(251, 249, 247, 0.92);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo-primary {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .logo-primary span {
+      color: var(--accent);
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .main-nav a {
+      color: var(--ink-soft);
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+    }
+
+    .main-nav a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .main-nav a.active {
+      border-bottom-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--muted);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .search-toggle:hover {
+      border-color: var(--accent);
+      color: var(--ink);
+    }
+
+    .search-bar {
+      display: none;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .search-bar.active {
+      display: block;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 0.9rem 1.2rem;
+      font-size: 1rem;
+      font-family: var(--sans);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      background: var(--surface);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+
+    /* ---------- PRIVACY PAGE ---------- */
+    .privacy-hero {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.8rem;
+    }
+
+    .privacy-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-hero .subhead {
+      font-size: 1.1rem;
+      color: var(--ink-soft);
+      max-width: 600px;
+      margin-bottom: 0;
+    }
+
+    .privacy-hero .meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 1.2rem;
+      font-style: italic;
+    }
+
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .privacy-content {
+      max-width: var(--content-width);
+    }
+
+    .privacy-content h2 {
+      font-size: 1.6rem;
+      margin-top: 2.8rem;
+      margin-bottom: 0.8rem;
+      scroll-margin-top: 100px;
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-size: 1.15rem;
+      margin-top: 1.6rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .privacy-content p {
+      font-size: 0.95rem;
+      line-height: 1.75;
+    }
+
+    .privacy-content ul, .privacy-content ol {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .privacy-content strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .privacy-content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .privacy-content a:hover {
+      color: var(--ink);
+    }
+
+    /* Sidebar TOC */
+    .privacy-sidebar {
+      position: sticky;
+      top: 100px;
+      align-self: start;
+    }
+
+    .toc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+    }
+
+    .toc-card h3 {
+      font-size: 0.9rem;
+      font-family: var(--sans);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .toc-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.88rem;
+    }
+
+    .toc-card li {
+      margin-bottom: 0.5rem;
+    }
+
+    .toc-card a {
+      color: var(--ink-soft);
+      border-left: 2px solid transparent;
+      padding-left: 0.7rem;
+      display: block;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .toc-card a:hover {
+      color: var(--ink);
+      border-left-color: var(--accent);
+    }
+
+    .toc-card .badge {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+      background: var(--accent-soft);
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+    }
+
+    /* ---------- NEWSLETTER ---------- */
+    .newsletter {
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.8rem;
+      margin-bottom: 3.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .newsletter h2 {
+      color: var(--bg);
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .newsletter p {
+      color: #c5beb6;
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .newsletter form {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter input {
+      flex: 1;
+      min-width: 180px;
+      padding: 0.8rem 1rem;
+      border: 1px solid #3f3f3f;
+      background: #2a2a2a;
+      border-radius: 30px;
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .newsletter input::placeholder {
+      color: #8a8a8a;
+    }
+
+    .newsletter button {
+      padding: 0.8rem 1.6rem;
+      background: var(--accent);
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .newsletter button:hover {
+      background: #b08d6b;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0 2rem;
+      background: var(--bg);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 280px;
+      margin-top: 0.8rem;
+    }
+
+    .footer-col h5 {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer-bottom a {
+      color: var(--muted);
+      margin-left: 1.2rem;
+    }
+
+    .footer-bottom a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .privacy-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .privacy-sidebar {
+        position: static;
+        order: -1;
+      }
+
+      .toc-card ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+      }
+
+      .toc-card li {
+        margin-bottom: 0;
+      }
+
+      .toc-card a {
+        border-left: none;
+        padding-left: 0;
+        border-bottom: 1px solid transparent;
+      }
+
+      .toc-card a:hover {
+        border-left: none;
+        border-bottom-color: var(--accent);
+      }
+
+      .newsletter {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .main-nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-bottom a {
+        margin: 0 0.6rem;
+      }
+
+      .privacy-hero {
+        padding: 2rem 0 1.5rem;
+      }
+
+      .privacy-content h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .logo-primary {
+        font-size: 1.3rem;
+      }
+
+      .search-toggle span {
+        display: none;
+      }
+
+      .newsletter button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html" class="logo-primary">PLINTH<span>&</span>PLEAT</a>
+        <span class="logo-sub">Everyday Spatial Ideas</span>
+      </div>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <button class="search-toggle" id="searchToggle" aria-label="Toggle search">
+        🔍 <span>Search</span>
+      </button>
+    </div>
+    <div class="container search-bar" id="searchBar">
+      <input type="search" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="container">
+
+    <!-- Privacy Hero -->
+    <section class="privacy-hero">
+      <h1>Privacy Policy</h1>
+      <p class="subhead">We believe your data is yours. This policy explains what we collect, why, and how you can control it — in plain language.</p>
+      <p class="meta">Last updated: 1 March 2025</p>
+    </section>
+
+    <!-- Privacy Layout: Content + Sidebar -->
+    <div class="privacy-layout">
+
+      <!-- Content -->
+      <article class="privacy-content">
+
+        <h2 id="introduction">1. Introduction</h2>
+        <p>PLINTH &amp; PLEAT (“we”, “us”, “our”) operates the website at <strong>plinthandpleat.com</strong> and its related newsletters and services. We are committed to protecting your privacy and handling your personal information with transparency and care.</p>
+        <p>This Privacy Policy describes how we collect, use, store, and share information about you when you visit our website, subscribe to our newsletter, submit a contact form, or interact with us in other ways.</p>
+        <p>By using our site, you agree to the practices described in this policy. If you do not agree, please discontinue use of the site.</p>
+
+        <h2 id="information-we-collect">2. Information we collect</h2>
+        <p>We collect only the information necessary to provide and improve our services. This falls into three categories:</p>
+
+        <h3>Information you provide directly</h3>
+        <ul>
+          <li><strong>Contact form:</strong> name, email address, subject, and message content.</li>
+          <li><strong>Newsletter signup:</strong> email address.</li>
+          <li><strong>Correspondence:</strong> any information you include when you email us directly.</li>
+        </ul>
+
+        <h3>Information collected automatically</h3>
+        <ul>
+          <li><strong>Usage data:</strong> pages viewed, time on page, referring URLs, and general interaction with the site.</li>
+          <li><strong>Device and browser data:</strong> IP address, browser type, operating system, and screen resolution.</li>
+          <li><strong>Cookies and similar technologies:</strong> see Section 6 below for details.</li>
+        </ul>
+
+        <h3>Information from third parties</h3>
+        <p>We do not purchase or receive personal data from data brokers. If you sign up through a third-party platform (e.g., a newsletter provider), that platform may share your email address with us solely for the purpose of delivering our communications.</p>
+
+        <h2 id="how-we-use">3. How we use your information</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+          <li>To respond to your inquiries, pitches, and messages.</li>
+          <li>To send our newsletter if you have opted in.</li>
+          <li>To analyse how the site is used so we can improve content and user experience.</li>
+          <li>To detect, prevent, and address technical issues or misuse.</li>
+          <li>To comply with legal obligations.</li>
+        </ul>
+        <p>We do <strong>not</strong> sell, rent, or trade your personal information to third parties for marketing purposes.</p>
+
+        <h2 id="legal-basis">4. Legal basis for processing (GDPR)</h2>
+        <p>If you are in the European Economic Area (EEA) or the United Kingdom, our legal basis for processing your personal data is:</p>
+        <ul>
+          <li><strong>Consent:</strong> for newsletter subscriptions and non-essential cookies. You may withdraw consent at any time.</li>
+          <li><strong>Legitimate interest:</strong> for responding to inquiries, improving our site, and ensuring security.</li>
+          <li><strong>Legal obligation:</strong> where we are required to retain or disclose information by law.</li>
+        </ul>
+
+        <h2 id="data-sharing">5. Sharing your information</h2>
+        <p>We share your information only in limited circumstances:</p>
+        <ul>
+          <li><strong>Service providers:</strong> trusted third parties who help us operate the site and deliver emails (e.g., email delivery platforms, analytics providers). These providers are bound by confidentiality obligations.</li>
+          <li><strong>Legal requirements:</strong> if required by law, regulation, or valid legal process.</li>
+          <li><strong>Business transfers:</strong> in the unlikely event of a merger or acquisition, your data may be transferred as part of the business assets, with notice to you.</li>
+        </ul>
+
+        <h2 id="cookies">6. Cookies and tracking</h2>
+        <p>We use minimal cookies and similar technologies. Essential cookies are necessary for the site to function. Analytics cookies help us understand which articles are read and how visitors navigate the site — this data is aggregated and anonymised where possible.</p>
+        <p>You can control cookies through your browser settings. Disabling cookies may affect some site functionality. For more details, see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+        <h2 id="data-retention">7. Data retention</h2>
+        <p>We retain personal data only as long as necessary for the purposes described in this policy:</p>
+        <ul>
+          <li><strong>Contact form submissions:</strong> retained for up to 12 months after the inquiry is resolved, unless a longer period is required for legal reasons.</li>
+          <li><strong>Newsletter subscriptions:</strong> retained until you unsubscribe, plus a short period for suppression purposes.</li>
+          <li><strong>Analytics data:</strong> retained in aggregate form for up to 26 months.</li>
+        </ul>
+
+        <h2 id="your-rights">8. Your rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Access:</strong> request a copy of the personal data we hold about you.</li>
+          <li><strong>Rectification:</strong> request correction of inaccurate or incomplete data.</li>
+          <li><strong>Erasure:</strong> request deletion of your personal data, subject to legal retention requirements.</li>
+          <li><strong>Restriction:</strong> request that we limit processing of your data.</li>
+          <li><strong>Portability:</strong> request transfer of your data in a structured, machine-readable format.</li>
+          <li><strong>Objection:</strong> object to processing based on legitimate interests.</li>
+          <li><strong>Withdraw consent:</strong> where processing is based on consent, withdraw it at any time.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@plinthandpleat.com">privacy@plinthandpleat.com</a>. We will respond within 30 days.</p>
+
+        <h2 id="security">9. Security</h2>
+        <p>We take reasonable technical and organisational measures to protect your personal data from unauthorised access, loss, or misuse. These include encrypted connections (HTTPS), access controls, and regular reviews of our data practices.</p>
+        <p>However, no method of transmission over the internet is completely secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
+
+        <h2 id="children">10. Children's privacy</h2>
+        <p>Our site is not directed at children under 16. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us and we will delete it promptly.</p>
+
+        <h2 id="international">11. International transfers</h2>
+        <p>Our servers and service providers may be located outside your country of residence. Where we transfer personal data internationally, we ensure appropriate safeguards are in place, such as standard contractual clauses approved by relevant authorities.</p>
+
+        <h2 id="changes">12. Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we make material changes, we will post a notice on this page and update the “Last updated” date at the top. We encourage you to review this page periodically.</p>
+
+        <h2 id="contact">13. Contact us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact:</p>
+        <p>
+          <strong>PLINTH &amp; PLEAT — Privacy Team</strong><br>
+          14 Courtyard Lane<br>
+          London, EC1 4AB<br>
+          United Kingdom<br>
+          Email: <a href="mailto:privacy@plinthandpleat.com">privacy@plinthandpleat.com</a>
+        </p>
+        <p>If you are in the EEA or UK and are not satisfied with our response, you have the right to lodge a complaint with your local data protection authority.</p>
+
+      </article>
+
+      <!-- Sidebar TOC -->
+      <aside class="privacy-sidebar" aria-label="Table of contents">
+        <div class="toc-card">
+          <h3>On this page</h3>
+          <ul>
+            <li><a href="#introduction">1. Introduction</a></li>
+            <li><a href="#information-we-collect">2. Information we collect</a></li>
+            <li><a href="#how-we-use">3. How we use your information</a></li>
+            <li><a href="#legal-basis">4. Legal basis (GDPR)</a></li>
+            <li><a href="#data-sharing">5. Sharing your information</a></li>
+            <li><a href="#cookies">6. Cookies and tracking</a></li>
+            <li><a href="#data-retention">7. Data retention</a></li>
+            <li><a href="#your-rights">8. Your rights</a></li>
+            <li><a href="#security">9. Security</a></li>
+            <li><a href="#children">10. Children's privacy</a></li>
+            <li><a href="#international">11. International transfers</a></li>
+            <li><a href="#changes">12. Changes to this policy</a></li>
+            <li><a href="#contact">13. Contact us</a></li>
+          </ul>
+          <span class="badge">📄 Effective: 1 March 2025</span>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Newsletter Banner -->
+    <section class="newsletter" aria-label="Newsletter signup">
+      <div>
+        <h2>Stay curious.</h2>
+        <p>Join 12,000+ readers who receive our weekly long-form essay on interior design, architecture, and the art of living well.</p>
+      </div>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Email address" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-primary" style="font-size: 1.4rem;">PLINTH<span>&</span>PLEAT</a>
+          <p>Interior design and architecture journal. Independent, reader-supported, and ad-free since 2019.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Categories</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Space Planning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>More</h5>
+          <ul>
+            <li><a href="#">Home Design</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Modern Homes</a></li>
+            <li><a href="#">Renovation</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Info</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 PLINTH & PLEAT. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- Search Toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('active');
+        if (searchBar.classList.contains('active')) {
+          searchInput.focus();
+        }
+      });
+
+      // --- Newsletter Form (demo) ---
+      const newsletterForm = document.getElementById('newsletterForm');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const input = this.querySelector('input[type="email"]');
+          if (input && input.value.trim()) {
+            alert('Thank you for subscribing. (Demo — no data sent.)');
+            input.value = '';
+          }
+        });
+      }
+
+      // --- Smooth TOC active link highlight on scroll ---
+      const tocLinks = document.querySelectorAll('.toc-card a');
+      const sections = document.querySelectorAll('.privacy-content h2[id]');
+
+      function highlightToc() {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (window.scrollY >= sectionTop - 120) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        tocLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.style.color = 'var(--ink)';
+            link.style.borderLeftColor = 'var(--accent)';
+          } else {
+            link.style.color = '';
+            link.style.borderLeftColor = '';
+          }
+        });
+      }
+
+      window.addEventListener('scroll', highlightToc);
+      highlightToc();
+    })();
+  </script>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy — PLINTH & PLEAT",
+    "description": "Privacy policy for PLINTH & PLEAT. How we collect, use, and protect your personal information.",
+    "url": "https://plinthandpleat.com/privacy",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PLINTH & PLEAT",
+      "email": "privacy@plinthandpleat.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "14 Courtyard Lane",
+        "addressLocality": "London",
+        "postalCode": "EC1 4AB",
+        "addressCountry": "GB"
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>
